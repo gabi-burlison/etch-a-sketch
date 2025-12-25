@@ -1,19 +1,33 @@
+* {
+      background-color: lightblue;
+}
+
 #container {
-display: flex;
-flex-wrap: wrap;
-border: 10px solid red;
-background-color: red;
-margin: 0;
-padding: 0px;
-height: 960px;
-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 960px;
+    width: 960px;
 }
 
 .grid-square {
-    border: 1px solid yellow;
     background-color: black;
     box-sizing: border-box;
     margin: 0;
     height: calc(100%/16);
-    width: calc(100%/16); 
+    width: calc(100%/16);
 }
+
+.trace {
+    background-color: palegoldenrod;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg)
+    }
+};
