@@ -1,5 +1,16 @@
 * {
-      background-color: lightblue;
+    background-color: lightblue;
+}
+
+#input-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 960px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 #container {
@@ -18,6 +29,12 @@
     width: calc(100%/16);
 }
 
+.custom-grid-square {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .trace {
     background-color: palegoldenrod;
     animation: animate 5s linear infinite;
@@ -27,7 +44,10 @@
     0% {
         filter: hue-rotate(0deg);
     }
+
     100% {
         filter: hue-rotate(360deg)
     }
-};
+}
+
+;
